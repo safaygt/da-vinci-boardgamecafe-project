@@ -39,7 +39,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
 ### 1. Klonlama
 ```bash
-git clone [https://github.com/da-vinci-boardgamecafe-project.git](https://github.com/safaygt/da-vinci-boardgamecafe-project.git)
+git clone https://github.com/safaygt/da-vinci-boardgamecafe-project.git
 cd da-vinci-boardgamecafe-project
 ```
 
