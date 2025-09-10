@@ -49,7 +49,7 @@ Uygulama varsayılan olarak:
 
 
  🔗 API Uç Noktaları
-Kullanıcılar (Users)
+<h2>Kullanıcılar (Users)</h2>
 <ul>
 <li>GET /users → Tüm kullanıcıları listeler</li>
 
@@ -61,7 +61,8 @@ Kullanıcılar (Users)
 
 <li>DELETE /users/:id → Kullanıcı siler</li>
 
-Postlar (Posts)
+
+<h2>Postlar (Posts)</h2>
 
 <li>GET /posts → Tüm postları listeler</li>
 
