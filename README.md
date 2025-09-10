@@ -1,7 +1,5 @@
 # Da Vinci Boardgame Cafe Project
 
-![Web Development Assignment](https://placehold.co/800x400/31363F/EEEEEE?text=Web+Development+Assignment)
-
 Bu proje, hem frontend hem de backend becerilerini sergilemek amacıyla geliştirilmiş, **tam yığın (full stack)** bir web uygulamasıdır. Proje, kullanıcı ve post verilerini yönetebilen basit bir web uygulamasını hayata geçirmeyi hedeflemektedir. Uygulama, modern bir kullanıcı arayüzü ile güçlü bir API altyapısını bir araya getirir.
 
 ---
