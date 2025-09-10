@@ -1,69 +1,81 @@
-# React + TypeScript + Vite
+# Frontend Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, **"Web Development Assignment"** ödevinin frontend kısmını oluşturmaktadır.  
+Proje, **Vite** ve **React** kullanılarak geliştirilmiş olup, dinamik verileri bir backend API'sinden (**NestJS**) çekmek ve kullanıcı arayüzünde görüntülemek için tasarlanmıştır.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Teknolojiler
+- **React**: Kullanıcı arayüzü oluşturmak için JavaScript kütüphanesi  
+- **TypeScript**: Güçlü tip kontrolü ve ölçeklenebilirlik için  
+- **Vite**: Hızlı ve modern bundler  
+- **ESLint**: Kod kalitesini ve stilini korumak için linting aracı  
+- **react-router-dom**: Uygulama içi yönlendirme (routing)  
+- **Tailwind CSS**: Hızlı ve esnek stil oluşturma  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Gereksinimler
+Aşağıdaki yazılımların kurulu olması gerekmektedir:
+- [Node.js (LTS sürümü)](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) veya [yarn](https://yarnpkg.com/)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📥 Kurulum
+Proje dizininde **frontend** klasörüne gidin:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd frontend
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Gerekli bağımlılıkları yükleyin:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+# veya
+yarn install
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+▶️ Uygulamayı Çalıştırma
+
+Geliştirme modunu başlatın:
+
+```bash
+npm run dev
+```
+
+<p>Uygulama varsayılan olarak:
+👉 http://localhost:5173
+ adresinde çalışacaktır.</p>
+ 
+
+<h2>🔗 API Entegrasyonu</h2>
+
+Frontend uygulaması, kullanıcı ve post verilerini NestJS backend API'sinden çekmek için fetch veya axios kullanır.
+Tüm CRUD işlemleri (Oluşturma, Okuma, Güncelleme, Silme) backend üzerinden yönetilir.
+
+
+<h2>🛠️ Git Entegrasyonu</h2>
+
+Bu frontend projesi, da-vinci-boardgamecafe-project adlı ana proje ile aynı repository içinde tutulmaktadır.
+
+1. Ana dala geçiş yapın:
+   
+```bash
+git checkout master
+```
+
+2. Uzak depodaki son değişiklikleri çekin:
+
+```bash
+git pull origin master
+```
+
+3. Frontend değişikliklerini commit edip gönderin:
+
+```bash
+git add frontend/
+git commit -m "Add frontend project"
+git push origin master
 ```
