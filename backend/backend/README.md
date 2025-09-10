@@ -60,10 +60,11 @@ Uygulama varsayılan olarak:
 <li>PUT /users/:id → Kullanıcı günceller</li>
 
 <li>DELETE /users/:id → Kullanıcı siler</li>
+</ul>
 
 
 <h2>Postlar (Posts)</h2>
-
+<ul>
 <li>GET /posts → Tüm postları listeler</li>
 
 <li>GET /posts/:id → Belirli postu getirir</li>
