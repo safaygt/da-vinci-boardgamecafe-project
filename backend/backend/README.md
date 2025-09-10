@@ -42,13 +42,14 @@ Geliştirme sunucusunu başlatmak için:
 npm run start:dev
 ```
 
-Uygulama varsayılan olarak:
+<p>Uygulama varsayılan olarak:
 👉 http://localhost:3000
- adresinde çalışacaktır.
+ adresinde çalışacaktır.</p>
 
 
 
- 🔗 API Uç Noktaları
+<h2>🔗 API Uç Noktaları</h2>
+
 <h2>Kullanıcılar (Users)</h2>
 <ul>
 <li>GET /users → Tüm kullanıcıları listeler</li>
