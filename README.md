@@ -48,7 +48,7 @@ cd da-vinci-boardgamecafe-project
 Backend API'sini çalıştırmak için:
 
 ```bash
-cd backend
+cd backend/backend
 npm install
 npm run start:dev
 ```
